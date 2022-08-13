@@ -17,12 +17,17 @@ namespace StacksAndQueues
             queue.Enqueue(70);
 
 
-            foreach (int item in queue)
+            foreach (int ele in queue)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(ele);
             }
             Console.WriteLine("After Dequeue ");
             queue.Dequeue();
+
+            foreach (int ele in queue)
+            {
+                Console.WriteLine(ele);
+            }
         }
     }
 }
